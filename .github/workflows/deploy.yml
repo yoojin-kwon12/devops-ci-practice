@@ -41,3 +41,6 @@ jobs:
           script: |
             pkill -f 'java -jar' || true
             nohup java -jar ~/app/build/libs/simple-spring-app-0.0.1-SNAPSHOT.jar > ~/app/app.log 2>&1 &
+
+
+
