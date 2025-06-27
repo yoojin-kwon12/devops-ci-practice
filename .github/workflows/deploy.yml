@@ -39,5 +39,4 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
             sudo yum install -y tmux
-            pkill -f 'java -jar' || true
             tmux new-session -d -s springapp "java -jar ~/app/build/libs/simple-spring-app-0.0.1-SNAPSHOT.jar > ~/app/app.log 2>&1"
